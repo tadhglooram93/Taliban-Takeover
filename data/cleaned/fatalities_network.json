@@ -1,0 +1,361 @@
+{
+"nodes": [
+ {
+   "id": 1,
+   "Nodes": "Anti-Taliban Forces",
+   "Radius": 14
+ },
+ {
+   "id": 2,
+   "Nodes": "BLA: Baloch Liberation Army",
+   "Radius": 1
+ },
+ {
+   "id": 3,
+   "Nodes": "Civilians",
+   "Radius": 1042
+ },
+ {
+   "id": 4,
+   "Nodes": "High Council of Islamic Emirate (Afghanistan)",
+   "Radius": 4
+ },
+ {
+   "id": 5,
+   "Nodes": "Islamic State (Afghanistan)",
+   "Radius": 5
+ },
+ {
+   "id": 6,
+   "Nodes": "LeT: Lashkar-e-Taiba",
+   "Radius": 1
+ },
+ {
+   "id": 7,
+   "Nodes": "Military Forces of Afghanistan",
+   "Radius": 2779
+ },
+ {
+   "id": 8,
+   "Nodes": "Militia (Pro-Government)",
+   "Radius": 361
+ },
+ {
+   "id": 9,
+   "Nodes": "NATO Forces",
+   "Radius": 185
+ },
+ {
+   "id": 10,
+   "Nodes": "National Movement Party of Afghanistan",
+   "Radius": 11
+ },
+ {
+   "id": 11,
+   "Nodes": "National Resistance Front",
+   "Radius": 69
+ },
+ {
+   "id": 12,
+   "Nodes": "Other",
+   "Radius": 95
+ },
+ {
+   "id": 13,
+   "Nodes": "Police Forces of Afghanistan",
+   "Radius": 845
+ },
+ {
+   "id": 14,
+   "Nodes": "Private Security Forces (Afghanistan)",
+   "Radius": 2
+ },
+ {
+   "id": 15,
+   "Nodes": "Taliban",
+   "Radius": 24228
+ },
+ {
+   "id": 16,
+   "Nodes": "Unidentified Armed Group (Afghanistan)",
+   "Radius": 30
+ },
+ {
+   "id": 18,
+   "Nodes": "HQN: Haqqani Network",
+   "Radius": 0
+ },
+ {
+   "id": 19,
+   "Nodes": "Military Forces of Pakistan",
+   "Radius": 0
+ },
+ {
+   "id": 21,
+   "Nodes": "Militia (Ghoryani)",
+   "Radius": 0
+ },
+ {
+   "id": 22,
+   "Nodes": "Protesters (Afghanistan)",
+   "Radius": 0
+ },
+ {
+   "id": 23,
+   "Nodes": "Rioters (Afghanistan)",
+   "Radius": 0
+ }
+],
+"links": [
+ {
+   "source": 16,
+   "target": 2,
+   "edgethickness": 1
+ },
+ {
+   "source": 7,
+   "target": 6,
+   "edgethickness": 1
+ },
+ {
+   "source": 16,
+   "target": 9,
+   "edgethickness": 1
+ },
+ {
+   "source": 13,
+   "target": 12,
+   "edgethickness": 1
+ },
+ {
+   "source": 18,
+   "target": 13,
+   "edgethickness": 1
+ },
+ {
+   "source": 7,
+   "target": 16,
+   "edgethickness": 1
+ },
+ {
+   "source": 21,
+   "target": 13,
+   "edgethickness": 2
+ },
+ {
+   "source": 15,
+   "target": 14,
+   "edgethickness": 2
+ },
+ {
+   "source": 9,
+   "target": 16,
+   "edgethickness": 2
+ },
+ {
+   "source": 13,
+   "target": 16,
+   "edgethickness": 2
+ },
+ {
+   "source": 22,
+   "target": 7,
+   "edgethickness": 3
+ },
+ {
+   "source": 16,
+   "target": 12,
+   "edgethickness": 3
+ },
+ {
+   "source": 16,
+   "target": 4,
+   "edgethickness": 4
+ },
+ {
+   "source": 8,
+   "target": 8,
+   "edgethickness": 4
+ },
+ {
+   "source": 23,
+   "target": 13,
+   "edgethickness": 4
+ },
+ {
+   "source": 16,
+   "target": 16,
+   "edgethickness": 4
+ },
+ {
+   "source": 9,
+   "target": 5,
+   "edgethickness": 5
+ },
+ {
+   "source": 5,
+   "target": 7,
+   "edgethickness": 5
+ },
+ {
+   "source": 5,
+   "target": 15,
+   "edgethickness": 5
+ },
+ {
+   "source": 19,
+   "target": 3,
+   "edgethickness": 6
+ },
+ {
+   "source": 7,
+   "target": 13,
+   "edgethickness": 6
+ },
+ {
+   "source": 16,
+   "target": 8,
+   "edgethickness": 8
+ },
+ {
+   "source": 15,
+   "target": 15,
+   "edgethickness": 8
+ },
+ {
+   "source": 16,
+   "target": 15,
+   "edgethickness": 9
+ },
+ {
+   "source": 13,
+   "target": 3,
+   "edgethickness": 10
+ },
+ {
+   "source": 8,
+   "target": 15,
+   "edgethickness": 10
+ },
+ {
+   "source": 15,
+   "target": 10,
+   "edgethickness": 11
+ },
+ {
+   "source": 7,
+   "target": 1,
+   "edgethickness": 14
+ },
+ {
+   "source": 7,
+   "target": 8,
+   "edgethickness": 15
+ },
+ {
+   "source": 9,
+   "target": 3,
+   "edgethickness": 16
+ },
+ {
+   "source": 11,
+   "target": 7,
+   "edgethickness": 18
+ },
+ {
+   "source": 13,
+   "target": 13,
+   "edgethickness": 18
+ },
+ {
+   "source": 15,
+   "target": 16,
+   "edgethickness": 21
+ },
+ {
+   "source": 7,
+   "target": 7,
+   "edgethickness": 24
+ },
+ {
+   "source": 5,
+   "target": 13,
+   "edgethickness": 54
+ },
+ {
+   "source": 16,
+   "target": 7,
+   "edgethickness": 69
+ },
+ {
+   "source": 7,
+   "target": 11,
+   "edgethickness": 69
+ },
+ {
+   "source": 9,
+   "target": 15,
+   "edgethickness": 80
+ },
+ {
+   "source": 5,
+   "target": 3,
+   "edgethickness": 81
+ },
+ {
+   "source": 15,
+   "target": 12,
+   "edgethickness": 91
+ },
+ {
+   "source": 16,
+   "target": 13,
+   "edgethickness": 105
+ },
+ {
+   "source": 7,
+   "target": 3,
+   "edgethickness": 130
+ },
+ {
+   "source": 13,
+   "target": 15,
+   "edgethickness": 157
+ },
+ {
+   "source": 5,
+   "target": 9,
+   "edgethickness": 184
+ },
+ {
+   "source": 15,
+   "target": 8,
+   "edgethickness": 334
+ },
+ {
+   "source": 15,
+   "target": 3,
+   "edgethickness": 398
+ },
+ {
+   "source": 16,
+   "target": 3,
+   "edgethickness": 401
+ },
+ {
+   "source": 15,
+   "target": 13,
+   "edgethickness": 655
+ },
+ {
+   "source": 15,
+   "target": 7,
+   "edgethickness": 2660
+ },
+ {
+   "source": 7,
+   "target": 15,
+   "edgethickness": 23959
+ }
+]
+}

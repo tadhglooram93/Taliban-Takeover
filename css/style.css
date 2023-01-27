@@ -1,0 +1,213 @@
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: darkblue;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: darkblue;
+    cursor: pointer;
+}
+
+#selectedYear {
+    color: #f08080;
+    /*font-weight: bold;*/
+}
+
+#selectedYearSection {
+    font-size: 19px;
+}
+
+.intro {
+    font-size: 19px;
+    color: darkslategray;
+}
+
+.axis {
+    font-size: 18px;
+    color: gray
+}
+
+.axis2 {
+    font-size: 14px;
+    color: gray
+}
+
+.button {
+    background-color: lightgray;
+    border: darkblue;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*#nextpageprompt {*/
+/*    color: darkred;*/
+/*    font-weight: bold;*/
+/*}*/
+
+h2, h1 {
+    color: #228075;
+}
+
+h3 {
+    color: darkslategray;
+    font-weight: bold;
+}
+
+h4 {
+    color: gray;
+    font-weight: normal;
+}
+
+#sliderHeader {
+    color: darkslategray;
+    font-weight: bold;
+}
+
+h5 {
+    color: darkslategray;
+}
+
+p {
+    color: gray;
+}
+
+.fundLabels, .reqLabels {
+    font-weight: normal;
+}
+
+b {
+    font-weight: normal;
+}
+
+.fit-image{
+    width: 100%;
+    opacity: 0.9;
+    object-fit: cover;
+    height: 100vh;
+    /*filter: brightness(80%);*/
+}
+
+.titleText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.titleTextBold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.titlepage{
+    font-size: 40px;
+    fill: black;
+}
+
+.col-sm {
+    background-color: #f5f8fa;;
+}
+
+body {
+    background-color: #f5f8fa;;
+}
+
+
+.annotation {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#source {
+    vertical-align: bottom;
+    opacity: 0.35;
+}
+
+#drawTextQQ {
+    font-size: 30px;
+    color: #f08080;
+    font-weight: bold;
+}
+
+#drawTextQQ2 {
+    font-size: 22px;
+    color: black;
+    opacity: 0.7;
+}
+
+#drawTextANS {
+    color: black;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+#drawTextANS2 {
+    color: #228075;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#crisisText, #aidText1, #takeoverTitle, #fatalitiesTitle {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    opacity:0.8;
+}
+
+#crisisText2, #crisisText3, #aidText2  {
+    color: gray;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+#aidText3 {
+    font-size:16px;
+    font-weight: normal;
+    color:gray;
+}
+
+#aidText1, #aidText2, #aidText3  {
+    transform: translate(0, 3vh);
+}
+
+.line {
+    transform: translate(0, 15vh);
+}
+
+#bubbleTooltip {
+    font-size: 16px;
+    color: gray;
+}
+
+#bubbleTooltipTitle {
+    color: darkblue;
+}

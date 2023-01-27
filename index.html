@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Taliban Takeover & Ensuing Crisis</title>
+
+  <!-- Load CSS libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/snap.css">
+  <link rel="stylesheet" href="css/style_map.css">
+
+  <!-- GOOGLE FONTS -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,300italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="support-scrollsnap"></div>
+
+  <div class="scroll-container">
+
+    <div class="scroll-area titlepage" style="background-color:#292C33; color: lightgray;">
+      <div class="container">
+        <div class="row justify-content-md-center" style="font-size: 40px; font-color:lightgray; text-align:center; padding-bottom: 50px">
+          The Rise of the Taliban and the Crisis that Followed
+        </div>
+        <div class="row justify-content-md-center" style="width:100%; padding-top:40px">
+          <img src="img/downscroll.png" style="height: 5vh; width: auto; opacity: 0.35">
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-area intro", style="width:45%">
+      <p>
+        In the year since American troops withdrew from Afghanistan, the Taliban's rapid takeover
+        has caused a decades-long humanitarian crisis to deteriorate to new depths. While the world's attention
+        has largely been elsewhere, millions of Afghans have seen their living conditions, freedoms, and
+        life prospects diminish under Taliban rule.
+        <br><br>
+        <span style="font-weight: bold;">
+        This project seeks to:<br>
+          <br><span style="font-weight: bold; color:#f08080">(1) Tell the story of the Taliban takeover
+          <br>(2) Describe the consequences for the people of Afghanistan<span style="font-weight: bold; color:#f08080">
+        </span>
+      </p>
+    </div>
+
+    <div class="scroll-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-5" style="margin-top:100px">
+            <p id="takeoverTitle">
+              Taliban Takeover <br>
+            </p>
+            <p>In Early 2020 The United States and the Taliban signed an agreement aimed at ending the eighteen-year war in Afghanistan.</p><br>
+            <p>The biggest challenge was to achieve a peace agreement between the Taliban and the Afghan government.
+              Continued Taliban violence, a weak Afghan government, and a gradual waning support by  the west would
+              lead to a total take over by the Taliban and the collapse of the Afghan government.</p><br>
+            <p>Our first visual explores chronologically and spatially the Taliban’s advances throughout the country.
+              We scrapped news articles from a local Afghan news agency named tolo news and identified those reporting
+              on districts and regions falling to the Taliban.</p><br><br>
+            <p><span style="color:#f08080; font-weight:bold">Scroll to the next page to view a map of the Taliban taking over Afghanistan</span></p>
+          </div>
+          <div class="col-7 center-block text-left">
+            <img src="img/afg_4.jpeg" class="img-responsive fit-image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-area">
+      <div class="container-fluid">
+        <div class="row" style="height: 100vh; padding-top: 10px">
+          <h1> Timeline of Taliban's Take Over of Afghanistan</h1>
+          <h5> Reported By <a href="https://tolonews.com/">Tolo News</a></h5>
+          <div class ="col">
+            <div class ="col">
+              <div>
+                <button id="play-button" onclick="animations()"> Play Me </button>
+                <svg height = "150" width="500">
+                  <rect x="20" y="62" fill="#3e645f" width ="20" height="20"/>
+                  <text x="50" y="78" fill="#3e645f" > Shaded region represent districts under Taliban control</text>
+                </svg>
+              </div>
+            </div>
+            <div class="slidecontainer" class="align-self-left" oninput="datefilter()">
+              <input type="range" min=0  max=36 value=0 class="slider" id="dateselector">
+            </div>
+            <div id="printdate">  </div>
+            <div id="AfghMap" style="height:50vh; width: 100%"> </div>
+          </div>
+          <div class ="col" style="height:62vh; width: 100%" >
+            <img src="img/context.jpg"  style="height:80vh; width: auto">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-5" style="margin-top:100px">
+            <p id="fatalitiesTitle">
+              Fatalities during the Taliban offense <br><br>
+            </p>
+            <p>The immediate consequence of the Taliban’s advances is the resulting casualties suffered throughout the country.
+              The last few months leading to the fall of Kabul were extremely violent, resulting a death toll in the many <strong> tens of thousands.</strong><br>
+            <p>Our second visual explores chronologically and spatially the death resulting from the Taliban’s advances. Our data comes from The Armed
+              Conflict Location & Event Data Project (ACLED) which collects real-time data on the locations, dates, actors, fatalities, and types of all reported political violence and protest events around the world.</p><br><br>
+            <p><span style="color:#f08080; font-weight:bold">Scroll to the next page to view a map of the fatalities suffered during the Taliban take over.</span></p>
+          </div>
+          <div class="col-7 center-block text-left">
+            <img src="img/afg_7.png" class="img-responsive fit-image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-area">
+      <div class="container-fluid">
+        <div class="row" style="height: 100vh; padding-top: 10px">
+          <h1> Recorded Fatalities by District from May to August 2021 </h1>
+          <h5> Reported By <a href="https://acleddata.com/">ACLEAD</a></h5>
+          <div class ="col">
+            <div class ="col">
+              <div>
+                <button id="play-button2" onclick="animations2()"> Play Me </button>
+                <svg height = "150" width="500">
+                  <circle cx="20" cy="72" r="10" fill="#3e645f" width ="20" height="20"/>
+                  <text x="50" y="78" fill="#3e645f" > Bubble size represents cumulative fatalities</text>
+                </svg>
+              </div>
+            </div>
+            <div class="slidecontainer" class="align-self-left" oninput="datefilter2()">
+              <input type="range" min=0  max=153 value=0 class="slider" id="dateselector2">
+            </div>
+            <div id="printdate2">  </div>
+            <div id="conflictmap" style="height:50vh; width: 100%"> </div>
+          </div>
+          <div class="col-5" style="margin-top:200px" >
+            <p>From April to August 2021 ACLEAD reported over <strong>33 thousand deaths</strong>, 3 times larger than the same time period in 2020.</p><br>
+            <p>The largest amount of deaths occurred in the Lashkar Gah district in Kandahar, an economically important district and province.</p><br>
+            Most of the conflicts occurred in bordering districts and provinces and around the capital Kabul, part of the Taliban’s military strategy was
+            to target districts with major border crossings to bordering neighboring countries, effectively chocking off major trade routes and roads.</p><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-area">
+      <div class="container-fluid" style="height:100vh; width:100%">
+        <h1> Recorded Fatalities by Actor from May to August 2021 </h1>
+        <h5 style="height: 30px;"> Reported By <a href="https://acleddata.com/">ACLEAD</a></h5>
+        <div class ="col">
+          <div>
+            <svg height = "150" width="500">
+              <circle cx="20" cy="50" r="10" fill="#3e645f" width ="20" height="20"/>
+              <text x="50" y="50" fill="#3e645f" > Node size represents total Deaths</text>
+              <line x1="20" y1="90" x2="40" y2="90" stroke="#3e645f" />
+              <text x="50" y="95" fill="#3e645f" > link thickness represents fatalities by associated actor</text>
+            </svg>
+          </div>
+          <div>
+            <svg id="network" style="height:62vh; width: 100%"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="scroll-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-7 center-block text-left">
+            <img src="img/afg_2.jpg" class="img-responsive fit-image">
+          </div>
+          <div class="col-5">
+            <p><br><br><br><br></p>
+            <p class="annotation" id="crisisText" style="width:95%">
+              The Crisis' Human Cost
+              <br><br>
+            </p>
+            <p class="annotation" id="crisisText2" style="width:95%">
+              Events in Afghanistan over the past 20 years have been devastating for millions of Afghans who've
+              experienced violence, famine, repression, and economic hardship. The Taliban takeover has only worsened
+              their suffering.
+              <br><br>
+            </p>
+            <p class="annotation" id="crisisText3" style="width:95%">
+              Gallup's yearly survey of Afghan residents reveals a staggering level of hardship and hopelessness, the
+              extent of which may surprise you.
+              <br><br><br>
+              <span style="color:#f08080; font-weight: bold">Continue to the next page to explore the data</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-area">
+      <div class="container-fluid" style="height:100vh; width:100%">
+        <h2 style="padding-top: 20px; padding-bottom: 5px">Can you guess how Afghans have rated their quality-of-life through years of war and crisis?</h2>
+        <div class="row justify-content-left" style="background: #f5f8fa;">
+          <div class="container">
+            <div class="row" style="padding-left: 20px">
+              <label for="categorySelector" style="font-size:20px; font-weight:bold; color:#f08080;">Choose a topic:</label>
+                <select id='categorySelector' class="custom-select align-self-center" style="width: 30%; height:40px;" onchange="categoryChange()">
+                  <option value="Rating of current and future life is low enough to be considered suffering" selected>Suffering</option>
+                  <option value="If you had the opportunity, would you like to move PERMANENTLY to another country?">Desire to leave Afghanistan permanently</option>
+                  <option value="Do you believe that women in this country are not treated with respect and dignity?">Mistreatment of women</option>
+                  <option value="Is it difficult/very difficult to get by on your current income?">Struggling financially</option>
+                  <option value="Have there been times in the past year when you did not have enough money to buy food?">Lacking money for food</option>
+                  <option value="Right now, do you think that economic conditions where you live are getting worse?">Economic pessimism</option>
+                  <option value="Do you approve or disapprove of the job performance of the leadership of the United States?">Opinion on U.S. leadership</option>
+                </select>
+                <div class="button-container" style="width:40%">
+                  <button id='redraw-button' class="button" type="button" style="opacity:1">Erase My Drawing</button>
+                  <button id='history-line-button' class="button" type="button" style="background:#2280755b">Show Actual Trend</button>
+                  <button id='all-trends-button' class="button" type="button" style="opacity:0">Reveal All Trends</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="height: 80vh; width:100%; padding-top: 00; padding-left: 0vh; padding-right: 0vh; padding-bottom: 0vh">
+          <div class="col-4">
+            <p><br></p>
+            <p class="annotation" id="drawTextANS"></p>
+            <p class="annotation" id="drawTextANS2"></p>
+            <p class="annotation" id="drawTextQQ"><br>Question:<br></p>
+            <p class="annotation" id="drawTextQQ2"></p>
+            <p class="annotation" id="source"><br><br>Source: Gallup World Poll</p>
+          </div>
+          <div class="col-8" id='history-line'></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+
+            <div class="row aidContext">
+              <p class="annotation" id="aidText1" style="padding-left:20px">
+                How the World is Failing the Afghan People
+                <br>
+              </p>
+              <p class="annotation" id="aidText2" style="width:95%; padding-left:20px">
+                <br>
+                After decades of war and famine, 3 out of 4 Afgans (over 29 million) are in need of humanitarian assistance.
+                The Taliban takeover has only worsened the situation. Humanitarian funding needs have skyrocketed to $4.4B - 3x higher than
+                in 2021 and 10x higher than 2015. Only 66% of funding needs are currently being met. Aid mostly plateaued
+                after 2021, leaving humanitarian causes underfunding by $1.5B.
+              </p>
+              <p class="annotation" id="aidText2" style="width:95%; padding-left:20px">
+                <br>
+                <span style="color:#f08080; font-weight: bold">Continue to the next page to explore humanitarian aid data.</span>
+                In particular pay attention to which priorities
+                need the most funding at different stages of the crisis, which organizations and countries are providing
+                funding, and whether enough aid is being provided.
+                <br>
+              </p>
+            </div>
+
+            <div class="row line">
+              <div class="align-self-center" id="lineDiv" style="height: 20vh; width:100%;"></div>
+            </div>
+          </div>
+            <div class="col">
+              <img src="img/afg_3.jpeg" class="img-responsive fit-image">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="scroll-area">
+
+      <div class="container-fluid" id="mainDiv" style="height:100vh; width:100%">
+
+        <div class="row justify-content-left" style="background: #f5f8fa;">
+          <h2 style="padding-top: 10px; ">Use the date slider to see how humanitarian needs and funding have changed over time</h2>
+          <h4>Note that major categories are consistently underfunded - especially after the Taliban takeover in 2021</h4>
+          <div class="col-6" style="background: #f5f8fa; width: 30%; padding-top: 5px">
+            <div class="slidecontainer" class="align-self-left" onchange="categoryChange()">
+              <h4 id="sliderHeader">Year: <span id="selectedYear"></span></h4>
+              <input type="range" min=2009 max=2022 value=10 class="slider" id="yearSelector">
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="height: 70vh; width:100%;">
+
+          <div class="col-4" style="background: #f5f8fa;">
+              <div id="bubbleDiv" style="height: 62vh; width: 100%;"></div>
+          </div>
+          <div class="col-3" style="background: #f5f8fa; border-right:thin solid lightgray">
+              <div class="align-self-center">
+                <div id="diffDiv" style="height: 62vh; width: 100%;"></div>
+              </div>
+          </div>
+
+          <div class="col-4" style="background: #f5f8fa;">
+            <div id="grav-bubbles" style="height: 62vh; width: 100%;"></div>
+            <div style="height: 5vh; width: 633px; text-align: center; padding-top: 40px">
+              <a style="font-size: 8pt ;text-align: center; color: rgba(23,10,10,0.43); width: 633px">Footnote: Slight reporting discrepancies from previous page due to different datasets.</a>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="scroll-area" style="background-color:#292C33; color: lightgray;">
+      <div class="container">
+        <div class="row justify-content-md-center" style="font-size: 24px; font-color:lightgray; text-align:center; padding-bottom: 30px">
+          <span style="font-size: 30px; font-weight:bold">How can you help?</span>
+          <br>
+          Scan the QR code below to make a donation to the World Food Programme's efforts to
+          combat food insecurity
+        </div>
+        <div class="row justify-content-md-center" style="width:100%; padding-bottom: 15px;">
+          <img src="img/QR.png" style="height: 15%; width: 15%">
+        </div>
+        <div class="row justify-content-md-center" style="width:100%; padding-top:40px">
+            <img src="img/Aboutus.png" style="height: 30vh; width: auto">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- embedding JS libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- d3 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+
+  <!-- own js files -->
+  <script src="js/main.js"></script>
+  <script src="js/d3v3.js"></script>
+  <script src="js/drawClass.js"></script>
+  <script src="js/bubbleClass.js"></script>
+  <script src="js/diffClass.js"></script>
+  <script src="js/lineClass.js"></script>
+  <script src="js/map1.js"></script>
+  <script src="js/map2.js"></script>
+  <script src="js/main_conflict.js"></script>
+  <script src="js/gravBubbles.js"></script>
+
+
+  <script>
+    function categoryChange() {
+      selectedCategory = document.getElementById('categorySelector').value;
+      myDraw.wrangleData();
+    };
+  </script>
+
+  <script>
+    function yearChange() {
+      selectedCategory = document.getElementById('yearSelector').value;
+      myBubbles.wrangleData();
+      myDiffBars.wrangleData();
+    };
+  </script>
+  <script>
+    var slider = document.getElementById("yearSelector");
+    var output = document.getElementById("selectedYear");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+      myBubbles.wrangleData();
+      myDiffBars.wrangleData();
+      myGravBubbles.wrangleData();
+    }
+  </script>
+  <script>
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+  </script>
+  <script>
+    async function animations() {
+      for (let step = 0; step < 37; step++) {
+        document.getElementById('dateselector').value = step
+        AfghaMap.wrangleData();
+        await sleep(300);
+      }
+    }
+  </script>
+  <script>
+    async function animations2() {
+      for (let step = 0; step < 153; step++) {
+        document.getElementById('dateselector2').value = step
+        ConflictData.wrangleData();
+        await sleep(30);
+      }
+    }
+  </script>
+  <script>
+    function datefilter2() {
+      selectedCategory = document.getElementById('dateselector2').value;
+      ConflictData.wrangleData();
+    }
+  </script>
+  <script>
+    function datefilter() {
+      selectedCategory = document.getElementById('dateselector').value;
+      console.log(selectedCategory)
+      AfghaMap.wrangleData();
+    }
+  </script>
+
+</body>
+</html>
